@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center ;
+}
+@font-face {
+    font-family: 'Secret Words Display';
+    src: url('fonts/SecretMessage.otf') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('fonts/HankenGrotesk/HankenGrotesk-Italic-VariableFont_wght.ttf') format('woff2'),
+         url('fonts/HankenGrotesk/HankenGrotesk-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+}
+main{
+    margin-top: 13rem;
+}
+
+h1{
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 38.38px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: rgba(244, 69, 102, 1); /* Fond avec opacité pleine */
+    color:  #FFFFFF;
+    padding: 0.7rem 3rem;
+    border-radius: 20px;
+    transform: rotate(-2.29deg);   
+    z-index: 3;
+    opacity: 0.9;
+    width: 380px;    
+}
+.response{
+    color: #000 !important;
+    font-family:Secret Words Display ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 174px;
+    font-size:
+    180px ;
+    transform: rotate(10deg);
+    border-radius: 20px;
+    margin:0 auto;
+    font-weight: 900;
+    z-index: 2;
+    font-variation-settings: "wght" 900; /* Contrôle de l’épaisseur si disponible */
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+    letter-spacing: 8px;
+
+}
+
+.image{
+    width: 83px ;
+    height: auto;
+    position: absolute;
+    top: 25rem;
+    left: 38.7rem;
+}
+.reason{
+    transform: rotate(1.4deg);
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 22px;
+    margin-top: 3.7rem;
+    font-weight: 300;
+}
+.drapeau{
+    left: 44.8rem;
+    top: 33.8rem;
+    width: 48px;
+}
+
+@media (max-width: 1600px) {
+    .image{
+        width: 83px ;
+        height: auto;
+        position: absolute;
+        top: 25rem;
+        left: 23.7rem;
+    }
+    .drapeau{
+        left: 30.8rem;
+        top: 33.8rem;
+        width: 48px;
+    }
+}
